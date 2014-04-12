@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>HRISTOHRISTOV</Machine>
+    <WindowsUser>Christo</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>C761508904411E4BDFA9EB3B2D9696628D82B87B792ECECBFBDDA2C9B4D5064A</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>801ad414-6d5c-4b3a-97a9-72fcd38bcc92_1.0.0.0_neutral__kqd3g5fcx3p9p</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>801ad414-6d5c-4b3a-97a9-72fcd38bcc92_kqd3g5fcx3p9p!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>801ad414-6d5c-4b3a-97a9-72fcd38bcc92</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Dimitar</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\Robot\Robot\Store Socket Server\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-04-03T13:25:57.320</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\Robot\Robot\Store Socket Server\bin\Debug\Store Socket Server.exe">
+      <PackagePath>Store Socket Server.exe</PackagePath>
+      <Modified>2014-04-03T13:25:55.274</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Robot\Robot\Store Socket Server\bin\Debug\Store Socket Server.pdb">
+      <PackagePath>Store Socket Server.pdb</PackagePath>
+      <Modified>2014-04-03T13:25:55.142</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Robot\Robot\Store Socket Server\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-04-03T12:21:33.923</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Robot\Robot\Store Socket Server\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-04-03T12:21:35.110</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Robot\Robot\Store Socket Server\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-04-03T12:21:38.110</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Robot\Robot\Store Socket Server\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-04-03T12:21:38.676</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Robot\Robot\Store Socket Server\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2014-04-03T12:21:22.986</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Robot\Robot\Store Socket Server\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2014-04-03T12:21:49.114</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Robot\Robot\Store Socket Server\bin\Debug\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+      <Modified>2014-04-03T12:21:25.266</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Robot\Robot\Store Socket Server\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2014-04-03T13:25:56.105</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
