@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>SURFACEPRO2</Machine>
+    <WindowsUser>Dimitar</WindowsUser>
+    <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>91D3B507BEDF09707BA1EB7F306940A20BE55A32F9B836412AC5A7898AE5AADD</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>a821f995-781c-4d54-bb6d-333c29885a7a_1.0.0.0_neutral__kqd3g5fcx3p9p</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>a821f995-781c-4d54-bb6d-333c29885a7a_kqd3g5fcx3p9p!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>a821f995-781c-4d54-bb6d-333c29885a7a</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Dimitar</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Dimitar\documents\visual studio 2012\Projects\BFUROVER\StoreApp\bin\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-04-16T14:17:26.934</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Dimitar\documents\visual studio 2012\Projects\BFUROVER\StoreApp\bin\Release\StoreApp.exe">
+      <PackagePath>StoreApp.exe</PackagePath>
+      <Modified>2014-04-16T14:18:49.404</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitar\documents\visual studio 2012\Projects\BFUROVER\StoreApp\bin\Release\StoreApp.pdb">
+      <PackagePath>StoreApp.pdb</PackagePath>
+      <Modified>2014-04-16T14:18:49.382</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitar\documents\visual studio 2012\Projects\BFUROVER\StoreApp\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-04-12T16:19:05.871</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitar\documents\visual studio 2012\Projects\BFUROVER\StoreApp\Assets\robot-banner.png">
+      <PackagePath>Assets\robot-banner.png</PackagePath>
+      <Modified>2014-04-12T16:19:05.884</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitar\documents\visual studio 2012\Projects\BFUROVER\StoreApp\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-04-12T16:19:05.893</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitar\documents\visual studio 2012\Projects\BFUROVER\StoreApp\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-04-12T16:19:05.904</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitar\documents\visual studio 2012\Projects\BFUROVER\StoreApp\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-04-12T16:19:05.915</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitar\documents\visual studio 2012\Projects\BFUROVER\StoreApp\Common\ReadMe.txt">
+      <PackagePath>Common\ReadMe.txt</PackagePath>
+      <Modified>2014-04-15T09:31:28.644</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitar\documents\visual studio 2012\Projects\BFUROVER\StoreApp\bin\Release\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2014-04-12T16:17:56.919</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitar\documents\visual studio 2012\Projects\BFUROVER\StoreApp\bin\Release\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2014-04-16T07:08:52.344</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitar\documents\visual studio 2012\Projects\BFUROVER\StoreApp\bin\Release\GalleryPage.xaml">
+      <PackagePath>GalleryPage.xaml</PackagePath>
+      <Modified>2014-04-16T06:57:01.146</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitar\documents\visual studio 2012\Projects\BFUROVER\StoreApp\bin\Release\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+      <Modified>2014-04-16T07:48:44.454</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitar\documents\visual studio 2012\Projects\BFUROVER\StoreApp\bin\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2014-04-16T14:17:26.732</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

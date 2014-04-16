@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="a821f995-781c-4d54-bb6d-333c29885a7a" Publisher="CN=Dimitar" Version="1.0.0.0" />
+  <Properties>
+    <DisplayName>StoreApp</DisplayName>
+    <PublisherDisplayName>Dimitar</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="BFUROVER.App">
+      <VisualElements DisplayName="BFU ROVER" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="BFU ROVER is a tablet and smart phone controlled robot, which works in wireless network environment. The hardware is based on GHI Gadgeteer Modules. The software is programmed using Microsoft Technologies: .NET Framework and the language C#. The robot is controlled by using IP and socket-client server communication technology. Camera is used to visualize the images taken by the robot. The team created a solution which contains: Gadgeteer Robot Project, Windows Store App and Windows Phone 8 App." ForegroundText="light" BackgroundColor="#464646">
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="Assets\SplashScreen.png" />
+        <InitialRotationPreference>
+          <Rotation Preference="landscape" />
+        </InitialRotationPreference>
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="picturesLibrary" />
+    <Capability Name="privateNetworkClientServer" />
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

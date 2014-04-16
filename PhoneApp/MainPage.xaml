@@ -1,0 +1,95 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="PhoneApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot -->
+    <ScrollViewer>
+        <Grid x:Name="LayoutRoot" Background="Transparent">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- TitlePanel -->
+            <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+                <TextBlock Text="NASA Space Apps Challenge 2014" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
+                <TextBlock Text="BFU ROVER" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            </StackPanel>
+
+            <!-- ContentPanel-->
+            <StackPanel x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0" Orientation="Vertical">
+
+                <!-- Step 1: Start Control -->
+                <StackPanel>
+                    <TextBlock Text="Step 1. Socket" Style="{StaticResource PhoneTextTitle2Style}"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="IP" VerticalAlignment="Center"/>
+                        <TextBox x:Name="ServerIP" Text="192.168.0.101" />
+                        <TextBlock Text="Port" VerticalAlignment="Center"/>
+                        <TextBox x:Name="ServerPort" Text="5150" />
+                        <Button x:Name="ConnectButton" Content="Connect" Click="Connect_Click" />
+                    </StackPanel>
+                </StackPanel>
+
+                <!-- Step 2: Send Control Commands -->
+                <StackPanel>
+                    <TextBlock Text="Step 2: Commands" Style="{StaticResource PhoneTextTitle2Style}"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="sockStop" Content="Stop" Click="Send_Click" />
+                        <Button x:Name="sockForward" Content="Forward" Click="Send_Click"  />
+                        <Button x:Name="sockBack" Content="Back" Click="Send_Click"  />
+                        <Button x:Name="sockLeft" Content="Left" Click="Send_Click"  />
+                        <Button x:Name="sockRight" Content="Right" Click="Send_Click"  />
+                    </StackPanel>
+                </StackPanel>
+
+                <!-- Step 3: Web Server -->
+                <StackPanel>
+                    <TextBlock Text="Step 3: Web Server" Style="{StaticResource PhoneTextTitle2Style}"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="webStart" Content="Start" Click="Send_Click" />
+                        <Button x:Name="webStop" Content="Stop" Click="Send_Click"/>
+                    </StackPanel>
+                </StackPanel>
+
+                <!-- Step 4: Pictures -->
+                <StackPanel>
+                    <TextBlock Text="Step 4: Pictures" Style="{StaticResource PhoneTextTitle2Style}"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="New"  Click="Button_Take_New_Click" />
+                        <Button Content="Gallery" Click="Button_View_Gallery_Click" />
+                        <Button Content="Panorama" Click="Button_Panorama_Click" />
+                    </StackPanel>
+                    <ProgressBar x:Name="PictureProgress" Maximum="100" Margin="10"/>
+                </StackPanel>
+
+                <!-- Step 5. Log Messages -->
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="Step 5: Messages Log" Style="{StaticResource PhoneTextTitle2Style}"/>
+                    <ListBox x:Name="Log" MinHeight="100">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <TextBlock Text="{Binding Data}" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </StackPanel>
+
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+
+</phone:PhoneApplicationPage>

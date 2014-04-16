@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GTM.GHIElectronics.MotorControllerL298</name>
+    </assembly>
+    <members>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.MotorControllerL298">
+            <summary>
+            A motor controller used to control two different motors.
+            </summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.MotorControllerL298.#ctor(System.Int32)">
+            <summary></summary>
+            <param name="socketNumber">The socket that this module is plugged in to.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.MotorControllerL298.MoveMotor(Gadgeteer.Modules.GHIElectronics.MotorControllerL298.Motor,System.Int32)">
+            <summary>
+            Used to set a motor's speed.
+            <param name="_motorSide">The motor <see cref="T:Gadgeteer.Modules.GHIElectronics.MotorControllerL298.Motor"/> you are setting the speed for.</param>
+            <param name="_newSpeed"> The new speed that you want to set the current motor to.</param>
+            </summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.MotorControllerL298.MoveMotorRamp(Gadgeteer.Modules.GHIElectronics.MotorControllerL298.Motor,System.Int32,System.Int32)">
+            <summary>
+            Used to set a motor's speed with a ramping acceleration. <see cref="M:Gadgeteer.Modules.GHIElectronics.MotorControllerL298.MoveMotor(Gadgeteer.Modules.GHIElectronics.MotorControllerL298.Motor,System.Int32)"/>
+            <param name="_motorSide">The motor <see cref="T:Gadgeteer.Modules.GHIElectronics.MotorControllerL298.Motor"/> you are setting the speed for.</param>
+            <param name="_newSpeed"> The new speed that you want to set the current motor to.</param>
+            <param name="_rampingDelayMilli"> The time in which you want the motor to reach the new speed (in milliseconds).</param>
+            </summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.MotorControllerL298.MoveMotorRampNonBlocking(Gadgeteer.Modules.GHIElectronics.MotorControllerL298.Motor,System.Int32,System.Int32)">
+            <summary>
+            Used to set a motor's speed with a ramping acceleration asynchronously. <see cref="M:Gadgeteer.Modules.GHIElectronics.MotorControllerL298.MoveMotor(Gadgeteer.Modules.GHIElectronics.MotorControllerL298.Motor,System.Int32)"/>
+            <param name="_motorSide">The motor <see cref="T:Gadgeteer.Modules.GHIElectronics.MotorControllerL298.Motor"/> you are setting the speed for.</param>
+            <param name="_newSpeed"> The new speed that you want to set the current motor to.</param>
+            <param name="_rampingDelayMilli"> The time in which you want the motor to reach the new speed (in milliseconds).</param>
+            </summary>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.MotorControllerL298.Frequency">
+            <summary>
+            Used to set the PWM frequency for the motors because some motors require a 
+            certain frequency in order to operate properly. It defaults to 25KHz (25000).
+            </summary>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.MotorControllerL298.MotorControllerL298State">
+            <summary>
+            Represents the state of the <see cref="T:Gadgeteer.Modules.GHIElectronics.MotorControllerL298"/> object.
+            </summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.MotorControllerL298.MotorControllerL298State.Low">
+            <summary>
+            The state of MotorControllerL298 is low.
+            </summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.MotorControllerL298.MotorControllerL298State.High">
+            <summary>
+            The state of MotorControllerL298 is high.
+            </summary>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.MotorControllerL298.Motor">
+            <summary>
+            Represents the desired motor to use.
+            </summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.MotorControllerL298.Motor.Motor1">
+            <summary>
+            The left motor, marked M1, is the one in use.
+            </summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.MotorControllerL298.Motor.Motor2">
+            <summary>
+            The right motor, marked M2, is the one in use.
+            </summary>
+        </member>
+    </members>
+</doc>
