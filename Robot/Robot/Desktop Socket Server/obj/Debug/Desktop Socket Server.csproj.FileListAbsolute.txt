@@ -1,0 +1,9 @@
+D:\Robot\Robot\Desktop Socket Server\bin\Debug\Desktop Socket Server.exe.config
+D:\Robot\Robot\Desktop Socket Server\bin\Debug\Desktop Socket Server.exe
+D:\Robot\Robot\Desktop Socket Server\bin\Debug\Desktop Socket Server.pdb
+D:\Robot\Robot\Desktop Socket Server\obj\Debug\Desktop Socket Server.csprojResolveAssemblyReference.cache
+D:\Robot\Robot\Desktop Socket Server\obj\Debug\Desktop_Socket_Server.RobotControl.resources
+D:\Robot\Robot\Desktop Socket Server\obj\Debug\Desktop_Socket_Server.Properties.Resources.resources
+D:\Robot\Robot\Desktop Socket Server\obj\Debug\Desktop Socket Server.csproj.GenerateResource.Cache
+D:\Robot\Robot\Desktop Socket Server\obj\Debug\Desktop Socket Server.exe
+D:\Robot\Robot\Desktop Socket Server\obj\Debug\Desktop Socket Server.pdb

@@ -1,0 +1,65 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="PhoneSocketServer.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="MY APPLICATION" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
+            <TextBlock Text="Robot" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <ScrollViewer Grid.Row="1" Margin="12,0,12,0">
+            <Grid x:Name="ContentPanel">
+                <!-- Controls -->
+                <StackPanel Orientation="Vertical" Margin="10">
+                    <!-- Step 1: Start TCP Socket Server -->
+                    <StackPanel Margin="10" Background="DarkBlue">
+                        <TextBlock Text="Step 1:" FontSize="24" Height="28" Margin="10"/>
+                        <Button x:Name="ConnectButton" Content="Start TCP Socket Server" FontSize="24" Margin="10" />
+                        <TextBlock Text="IP Address:" FontSize="24" Height="28" Margin="10"/>
+                        <TextBox x:Name="ServerIP" Text="192.168.0.100" FontSize="24" Margin="10" />
+                        <TextBlock Text="Port:" FontSize="24" Height="28" Margin="10"/>
+                        <TextBox x:Name="ServerPort" Text="5150" FontSize="24" Margin="10" />
+                    </StackPanel>
+
+                    <!-- Step 2: Send Control Commands -->
+                    <StackPanel Margin="10" Background="DarkBlue">
+                        <TextBlock Text="Step 2: Send Control Commands" FontSize="24" Margin="10" />
+                        <Button Content="Stop" FontSize="24" Margin="5"/>
+                        <Button Content="Forward" FontSize="24" Margin="5"  />
+                        <Button Content="Backward" FontSize="24" Margin="5" />
+                        <Button Content="Left" FontSize="24" Margin="5"  />
+                        <Button Content="Right" FontSize="24" Margin="5"   />
+                    </StackPanel>
+
+                    <!-- Step 3: Take Pictures -->
+                    <StackPanel Margin="10" Background="DarkBlue">
+                        <TextBlock Text="Step 3: Take Pictures from the Robot" FontSize="24" Margin="10" />
+                        <phone:WebBrowser x:Name="RobotPicture" Width="320" Height="240" Margin="10"/>
+                        <Button Content="Take New Picture" FontSize="24" Margin="10" />
+                    </StackPanel>
+                </StackPanel>
+
+                <!-- Step 4: Log -->
+                <!--<TextBlock x:Name="Log" FontSize="22"></TextBlock>-->
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+
+</phone:PhoneApplicationPage>
