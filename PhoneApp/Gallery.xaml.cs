@@ -16,6 +16,7 @@ using PhoneApp.Services;
 
 namespace PhoneApp
 {
+    // Gallery Class
     public partial class Gallery : PhoneApplicationPage
     {
         // Gallery List
@@ -25,13 +26,13 @@ namespace PhoneApp
         public Gallery()
         {
             InitializeComponent();
-            // Images
-            LoadPicturesFromIsolatedStorage();
-            lbPictures.ItemsSource = galleryImages;
+            // Load Pictures
+            LoadPictures();
+            ListBoxPictures.ItemsSource = galleryImages;
         }
 
-        // Load Images
-        void LoadPicturesFromIsolatedStorage()
+        // Load Pictures
+        void LoadPictures()
         {
             using (var userStore = IsolatedStorageFile.GetUserStoreForApplication())
             {
@@ -45,8 +46,8 @@ namespace PhoneApp
                 {
                     using (var stream = userStore.OpenFile(fileName, FileMode.Open))
                     {
-                        GalleryImage galleryImage = new GalleryImage() { ImagePath = stream.Name };
-                        galleryImages.Add(galleryImage);
+                        GalleryImage newGalleryImage = new GalleryImage() { ImagePath = stream.Name };
+                        galleryImages.Add(newGalleryImage);
                     }
                 }
             }

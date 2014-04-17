@@ -13,6 +13,40 @@
     SupportedOrientations="Portrait" Orientation="Portrait"
     shell:SystemTray.IsVisible="True">
 
+    <!-- Phone Button Styles -->
+    <phone:PhoneApplicationPage.Resources>
+        <!-- Button Stop -->
+        <Style TargetType="Button" x:Key="ButtonStop">
+            <Setter Property="Content" Value="&#xE004;"></Setter>
+            <Setter Property="FontFamily" Value="Segoe UI Symbol"/>    
+            <Setter Property="Width" Value="80" />
+        </Style>        
+        <!-- Button Left -->
+        <Style TargetType="Button" x:Key="ButtonLeft">
+            <Setter Property="Content" Value="&#xE016;"></Setter>
+            <Setter Property="FontFamily" Value="Segoe UI Symbol"/>
+            <Setter Property="Width" Value="80" />
+        </Style>        
+        <!-- Button Right -->
+        <Style TargetType="Button" x:Key="ButtonRight">
+            <Setter Property="Content" Value="&#xE017;"></Setter>
+            <Setter Property="FontFamily" Value="Segoe UI Symbol"/>
+            <Setter Property="Width" Value="80" />
+        </Style>        
+        <!-- Button Forward -->
+        <Style TargetType="Button" x:Key="ButtonForward">
+            <Setter Property="Content" Value="&#xE018;"></Setter>
+            <Setter Property="FontFamily" Value="Segoe UI Symbol"/>
+            <Setter Property="Width" Value="80" />
+        </Style>        
+        <!-- Button Back -->
+        <Style TargetType="Button" x:Key="ButtonBack">
+            <Setter Property="Content" Value="&#xE019;"></Setter>
+            <Setter Property="FontFamily" Value="Segoe UI Symbol"/>
+            <Setter Property="Width" Value="80" />
+        </Style>
+    </phone:PhoneApplicationPage.Resources>
+    
     <!--LayoutRoot -->
     <ScrollViewer>
         <Grid x:Name="LayoutRoot" Background="Transparent">
@@ -46,11 +80,11 @@
                 <StackPanel>
                     <TextBlock Text="Step 2: Commands" Style="{StaticResource PhoneTextTitle2Style}"/>
                     <StackPanel Orientation="Horizontal">
-                        <Button x:Name="sockStop" Content="Stop" Click="Send_Click" />
-                        <Button x:Name="sockForward" Content="Forward" Click="Send_Click"  />
-                        <Button x:Name="sockBack" Content="Back" Click="Send_Click"  />
-                        <Button x:Name="sockLeft" Content="Left" Click="Send_Click"  />
-                        <Button x:Name="sockRight" Content="Right" Click="Send_Click"  />
+                        <Button x:Name="sockStop" Click="Send_Click" Style="{StaticResource ButtonStop}" />
+                        <Button x:Name="sockForward"  Click="Send_Click" Style="{StaticResource ButtonForward}" />
+                        <Button x:Name="sockBack"  Click="Send_Click" Style="{StaticResource ButtonBack}" />
+                        <Button x:Name="sockLeft" Click="Send_Click" Style="{StaticResource ButtonLeft}" />
+                        <Button x:Name="sockRight" Click="Send_Click" Style="{StaticResource ButtonRight}" />
                     </StackPanel>
                 </StackPanel>
 

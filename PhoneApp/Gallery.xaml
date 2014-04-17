@@ -14,35 +14,23 @@
     mc:Ignorable="d"
     shell:SystemTray.IsVisible="True">
 
-    <!-- Image Converter -->
-    <!--<phone:PhoneApplicationPage.Resources>
-        <local:ImageConverter x:Key="imageConveter"/>
-        <DataTemplate x:Key="imageTemplate">
-            <Grid Width="320" Height="240" Margin="10">
-                <Image Source="{Binding Path=Thumbnail, Converter={StaticResource imageConveter}}" Stretch="Fill" Width="320" Height="240" />
-            </Grid>
-        </DataTemplate>
-        <CollectionViewSource 
-        x:Name="picturesSource"/>
-    </phone:PhoneApplicationPage.Resources>-->
 
-    <!--LayoutRoot is the root grid where all page content is placed-->
+    <!-- LayoutRoot -->
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!--TitlePanel contains the name of the application and page title-->
+        <!-- TitlePanel -->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
             <TextBlock Text="NASA Space Apps Challenge 2014" Style="{StaticResource PhoneTextNormalStyle}"/>
             <TextBlock Text="BFU ROVER" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
-        <!--ContentPanel - place additional content here-->
+        <!-- ContentPanel -->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <!-- Picture Gallery -->
-            <ListBox x:Name="lbPictures" Grid.Row="3" Margin="10" 
+            <ListBox x:Name="ListBoxPictures" Grid.Row="3" Margin="10" 
                   HorizontalAlignment="Left" VerticalAlignment="Top">
                 <ListBox.ItemTemplate>
                     <DataTemplate>

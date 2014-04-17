@@ -20,9 +20,11 @@ namespace PhoneApp
     // Main Page Class
     public partial class MainPage : PhoneApplicationPage
     {
-        // variables
+        // Network Config
         private string IP = null;
         private string PORT = null;
+
+        // Network Interface
         NetworkInterface ni = new NetworkInterface();
         SynchronizationContext _syncContext;   
 
@@ -91,7 +93,7 @@ namespace PhoneApp
                 String command = s.Name.ToString();
                 switch (command)
                 {
-                    // Socket Server
+                    // socket Server
                     case "sockForward": ni.SendMessage("/robot/move/forward"); break;
                     case "sockBack": ni.SendMessage("/robot/move/backward"); break;
                     case "sockLeft": ni.SendMessage("/robot/turn/left"); break;
@@ -123,7 +125,7 @@ namespace PhoneApp
             }
             catch (Exception ex)
             {
-                LogMessage(string.Format("Take New Image Error: {0}", ex.Message));
+                MessageBox.Show(string.Format("Take New Image Error: {0}", ex.Message));
             }
         }
 
@@ -139,7 +141,7 @@ namespace PhoneApp
             using (var userStore = IsolatedStorageFile.GetUserStoreForApplication())
             {                  
                 var fileNames = userStore.GetFileNames("*.jpg");
-                var fileCount = fileNames.Count(); // Count the number of pictures
+                var fileCount = fileNames.Count(); 
                 using (var stream = new IsolatedStorageFileStream((fileCount++) + ".jpg", System.IO.FileMode.Create, userStore))
                 {
                     byte[] buffer = new byte[1024];
@@ -157,13 +159,7 @@ namespace PhoneApp
         // TODO: Button Panorama Image Click
         private void Button_Panorama_Click(object sender, RoutedEventArgs e)
         {
-            // 1. picture
-            // 2. left
-            // 3. sleep
-            // 4. stop
-            // ...
-            // progress bar
-            // create panorama
+            MessageBox.Show("Panorama Image is not implemented yet.");
         }
 
     }

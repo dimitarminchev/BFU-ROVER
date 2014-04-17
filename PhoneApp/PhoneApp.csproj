@@ -107,7 +107,6 @@
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
     <Compile Include="Services\GalleryImage.cs" />
-    <Compile Include="Services\ImageConverter.cs" />
     <Compile Include="Services\Message.cs" />
     <Compile Include="Services\MessageReceivedEventArgs.cs" />
     <Compile Include="Services\NetworkInterface.cs" />
