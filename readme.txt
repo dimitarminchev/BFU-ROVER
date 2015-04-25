@@ -1,9 +1,5 @@
 About
 ---
-BFU-ROVER is a NASA Space Apps Challenge 2014 Project.
-
-Abstract
----
 BFU-ROVER is a tablet and smart phone controlled robot, which works in wireless network environment. The hardware is based on GHI Gadgeteer Modules. The software is programmed usingMicrosoft Technologies: .NET Framework and the language C#. The robot is controlled by using IP and socket-client server communication technology. Camera is used to visualize the images taken by the robot. The team created a solution which contains: Gadgeteer Robot Project, Windows Store App and Windows Phone 8 App.
  
 Description
@@ -24,4 +20,6 @@ http://dev.bfu.bg/bfurover/
 BFU-ROVER Project BitBucket Source Code Repository: 
 https://bitbucket.org/interdrift_/bfurover/
 
-Source Code License: MIT license (MIT)
+Source Code License
+---
+MIT license (MIT)
